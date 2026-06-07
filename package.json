@@ -1,0 +1,48 @@
+{
+  "name": "aw-app",
+  "version": "2.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aw.app",
+    "productName": "AW App",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "dmg": {
+      "title": "AW App Installer",
+      "icon": "assets/icon.icns",
+      "backgroundColor": "#ffffff",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    }
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhnlz132012-svg/aw-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhnlz132012-svg/aw-app/issues"
+  },
+  "homepage": "https://github.com/mhnlz132012-svg/aw-app#readme"
+}
